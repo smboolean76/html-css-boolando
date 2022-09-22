@@ -56,6 +56,11 @@ header a, footer a {
     HEADER
 ------------------*/
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
     background-color: #ff6900;
     height: 60px;
     color: #fff;
@@ -82,6 +87,9 @@ header .row {
 /*------------------
     MAIN
 ------------------*/
+main {
+    padding-top: 60px;
+}
 .products {
     flex-wrap: wrap;
     padding: 40px 0;

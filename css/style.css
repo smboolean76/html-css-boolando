@@ -8,6 +8,13 @@
 }
 
 /*------------------
+    TYPO
+------------------*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------------
     COMMONS
 ------------------*/
 .container {
@@ -21,6 +28,10 @@
     display: flex;
     list-style: none;
 }
+.list-inline li:not(:last-child) {
+    margin-right: 10px;
+}
+
 header a, footer a {
     color: inherit;
     text-decoration: none;
@@ -45,6 +56,9 @@ header .row {
 .logo {
     width: 60%;
     text-align: center;
+}
+.logo img {
+    max-height: 30px;
 }
 .icons .list-inline {
     justify-content: flex-end;

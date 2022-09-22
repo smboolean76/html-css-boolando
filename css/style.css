@@ -13,6 +13,9 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+h4 {
+    margin-bottom: 10px;
+}
 
 /*------------------
     COMMONS
@@ -92,7 +95,19 @@ header .row {
 }
 .product-image img {
     width: 100%;
+    display: block;
 }
+.product-image:hover .img-hover {
+    display: block;
+}
+.product-image:hover .img-default {
+    display: none;
+}
+
+.product-image .img-hover {
+    display: none;
+}
+
 .product-image  .heart {
     position: absolute;
     top: 10px;
@@ -103,6 +118,9 @@ header .row {
     font-size: 24px;
     text-align: center;
     line-height: 50px;
+}
+.heart:hover i {
+    color: red;
 }
 .product-image .tags {
     position: absolute;
@@ -116,16 +134,13 @@ header .row {
 .price-original {
     text-decoration: line-through;
 }
-.product-info {
-
-}
 
 /*------------------
     FOOTER
 ------------------*/
 footer {
     background-color: #1a1a1a;
-    padding: 15px 0;
+    padding: 25px 0;
     color: #fff;
 }
 
